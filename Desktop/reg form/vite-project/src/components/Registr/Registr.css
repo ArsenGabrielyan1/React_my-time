@@ -1,9 +1,9 @@
-.Registr {
+ .Registr {
   position: absolute;
   left: 0;
   right: 0;
   top: 150px;
-}
+ }
 
 .Registr h1 {
   color: #fff;
@@ -26,7 +26,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 160px;
+  margin-top: 130px;
 }
 
 .tivi img {
@@ -35,7 +35,7 @@
 
 .login-form {
   width: 100%;
-  max-width: 500px;
+  max-width: 445px;
   margin: 20px auto;
   padding: 0 20px;
 }
@@ -57,7 +57,7 @@ label {
 
 .form-input {
   width: 100%;
-  height: 40px;
+  height: 33px;
   background: #f5eeee;
   color: #040404;
   border: none;
@@ -75,7 +75,7 @@ label {
 }
 
 .form-input:focus {
-  border: 1px solid rgb(245, 136, 4);
+  border: 2px solid rgb(245, 136, 4);
 }
 
 .btn {
@@ -203,7 +203,6 @@ label {
   color: #5c5a5a;
   font-size: 18px;
   font-family: Arial, Helvetica, sans-serif;
-  margin-bottom: 30px;
 }
 
 
@@ -219,7 +218,7 @@ label {
   justify-content: center;
   gap: 10px;
   margin-bottom: 20px;
-  margin-left: 110px;
+  margin-left: 80px;
 }
 
 .verification-input {
@@ -232,6 +231,19 @@ label {
   margin-top: 14px;
 }
 
-.labell{
-  margin-left: 165px;
+
+
+.labell {
+  /* Remove this line: margin-left: 165px; */
+  text-align: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.verification-inputs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  /* Remove this line: margin-left: 110px; */
 }
