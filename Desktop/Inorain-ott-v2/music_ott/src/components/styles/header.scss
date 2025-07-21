@@ -1,0 +1,44 @@
+.header-radio_music {
+    display: flex;
+    justify-content: space-between;
+    .btn_back {
+        background-color: transparent;
+        border: none;
+        display: flex;
+        align-items: center;
+        &.hidden{
+            opacity: 0;
+            pointer-events: none;
+        }
+        &.active{
+            .icon{
+                border-color: white;
+            }
+        }
+        .icon {
+            width:  5rem;
+            height: 5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            border: .3rem solid transparent;
+            svg{
+                width: 70%;
+                height: 70%;
+            }
+        }
+        span {
+            color: white;
+            font-size: 3.8rem;
+            margin-left: 1rem;
+        }
+    }
+
+    .date_time{
+        p{
+            color: white;
+            font-size: 3.8rem;
+        }
+    }
+}

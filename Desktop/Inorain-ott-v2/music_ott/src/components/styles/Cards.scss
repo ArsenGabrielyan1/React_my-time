@@ -1,0 +1,191 @@
+.category-item {
+    width: 26rem;
+    height: 26rem;
+    border-radius: 1rem;
+    background-color: #8ea4d7;
+    position: relative;
+    margin-right: 5rem;
+    margin-bottom: 4rem;
+    transition: 0.2s ease;
+    &.hide {
+        opacity: 0;
+    }
+    &.active {
+        box-shadow: 0 0 0 .3rem var(--active-color) !important;
+        transform: scale(1.05);
+    }
+    .image_category{
+        width: 100%;
+        height: 100%;
+        border-radius: 1rem;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .name-category {
+        color: white;
+        font-size: 2.4rem;
+        position: absolute;
+        width: 90%;
+        top: 2rem;
+        left: 2rem;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        text-shadow: 0 0 0.5rem black;
+    }
+}
+
+.music-item_recently {
+    width: 30.4rem;
+    height: 20.6rem;
+    border-radius: 1rem;
+    margin-right: 2rem;
+    border: 0.3rem solid transparent;
+    transition: 0.2s ease;
+    transform-origin: left;
+    &.hide {
+        opacity: 0.3;
+    }
+    &.active {
+        border-color: #287be9;
+        transform: scale(1.05);
+    }
+    .image_music_recently {
+        border-radius: 1rem;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    .name_music_recently {
+        color: white;
+        font-size: 2.4rem;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+}
+
+.card_music {
+    padding: 1.5rem 0;
+    display: flex;
+    align-items: center;
+    border: 0.2rem solid transparent;
+    border-radius: 0.8rem;
+    margin-bottom: 2rem;
+    transition: 0.2s ease;
+    position: relative;
+    &.selected {
+        .name_music{
+            color: #287be9 !important;
+        }
+        .number-music{
+            opacity: 0;
+        }
+        .selected-music-animation {
+            opacity: 1;
+            span {
+                &:nth-of-type(1) {
+                    animation: equlize_anime 1s infinite;
+                }
+                &:nth-of-type(2) {
+                    animation: equlize_anime 1s infinite 0.2s;
+                }
+                &:nth-of-type(3) {
+                    animation: equlize_anime 1s infinite 0.4s;
+                }
+                &:nth-of-type(4) {
+                    animation: equlize_anime 1s infinite 0.6s;
+                }
+            }
+        }
+    }
+    &.hide {
+        opacity: 0;
+        pointer-events: none;
+    }
+    &.active {
+        border-color: white;
+    }
+    .selected-music-animation {
+        position: absolute;
+        top: 0;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 2rem;
+        opacity: 0;
+        span {
+            display: inline-block;
+            width: 0.5rem;
+            height: 3rem;
+            background-color: #287be9;
+            margin-right: 0.2rem;
+            &:nth-of-type(1) {
+                height: 1.8rem;
+            }
+            &:nth-of-type(2) {
+                height: 3rem;
+            }
+            &:nth-of-type(3) {
+                height: 2rem;
+            }
+            &:nth-of-type(4) {
+                height: 1rem;
+            }
+        }
+    }
+    .number-music {
+        color: #b3b3b3;
+        font-size: 3rem;
+        padding: 1rem;
+        text-align: center;
+        width: 7rem;
+    }
+    .image-music-playlist {
+        width: 7.4rem;
+        height: 7.4rem;
+        .image_music_playlist {
+            width: 100%;
+            height: 100%;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover !important;
+        }
+    }
+    .info-music {
+        padding-left: 2rem;
+        width: 85%;
+        .name_music {
+            color: white;
+            font-size: 2.8rem;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        .singer_music {
+            color: #b3b3b3;
+            font-size: 2.4rem;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+    }
+}
+
+@keyframes equlize_anime {
+    0% {
+        height: 1rem;
+    }
+    50% {
+        height: 3rem;
+    }
+    100% {
+        height: 1rem;
+    }
+}

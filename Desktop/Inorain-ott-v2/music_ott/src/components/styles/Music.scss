@@ -1,0 +1,149 @@
+.parent-grid-categories {
+    h3 {
+        color: #f2f2f2;
+        font-size: 3.2rem;
+        font-weight: 600;
+        padding: 10rem 0 2rem;
+    }
+    .grid-categories {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.recently-wrapper {
+    h3 {
+        color: #f2f2f2;
+        font-size: 3.2rem;
+        font-weight: 600;
+        padding: 5rem 0 2rem;
+    }
+    .list_music_recently {
+        display: flex;
+    }
+}
+
+.music-wrapper {
+    .playlist-wrapper {
+    }
+    .selected-content-wrapper {
+    }
+}
+
+.selected-content-wrapper {
+    width: 80%;
+    margin: 5rem auto;
+    display: flex;
+    .image_content_rm,
+    .image-rm-selected {
+        width: 30rem;
+        border-radius: 1rem;
+        height: 30rem;
+        img {
+            width: 30rem;
+            height: 30rem;
+            object-fit: cover;
+            background-color: #8ea4d7;
+            border-radius: 1rem;
+        }
+    }
+    .main-info-content-rm {
+        padding-left: 4rem;
+        p {
+            color: white;
+            font-size: 2.4rem;
+            font-weight: 700;
+        }
+        .categoty-name-rm {
+        }
+        .name-content-rm {
+            padding: 2rem 0;
+            font-size: 8rem;
+            min-height: 14rem;
+            width: 110rem;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        .desc-content-rm {
+            font-weight: 400;
+            display: none;
+        }
+        .count-content-rm {
+            font-weight: 400;
+            display: flex;
+            align-items: center;
+            .dot-rm {
+                width: 0.8rem;
+                height: 0.8rem;
+                background-color: white;
+                margin: 0 1rem;
+                border-radius: 50%;
+            }
+        }
+        .progress-field-rm {
+            padding-top: 2rem;
+            display: flex;
+            align-items: center;
+            .btns-group-rm {
+                display: flex;
+                .button-play-back {
+                    width: 7rem;
+                    height: 7rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    margin-right: 1rem;
+                    border: 0.2rem solid transparent;
+
+                    &.active {
+                        border-color: white;
+                    }
+
+                    &.play_pause {
+                        background-color: #287be9;
+                        svg {
+                            padding-left: 0.2rem;
+                        }
+                    }
+                    svg {
+                        width: 30%;
+                        height: 30%;
+                        object-fit: contain;
+                    }
+                }
+            }
+            .parent_progress-rm {
+                display: flex;
+                align-items: center;
+                margin-left: 3rem;
+
+                .current-time-rm,
+                .duration-rm {
+                    color: #a6a6a6;
+                    font-size: 1.8rem;
+                    font-weight: 500;
+                    width: 5rem;
+                }
+                .progress-rm {
+                    border-radius: 0.4rem;
+                    overflow: hidden;
+                    height: 0.5rem;
+                    background-color: rgba(255, 255, 255, 0.4);
+                    min-width: 55rem;
+                    margin: 0 1rem;
+                    .progress-bar-rm {
+                        width:0%;
+                        height: 100%;
+                        background-color: white;
+                        border-radius: 0.4rem;
+                    }
+                }
+
+                .duration-rm {
+                }
+            }
+        }
+    }
+}

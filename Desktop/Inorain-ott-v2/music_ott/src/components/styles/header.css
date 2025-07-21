@@ -1,0 +1,39 @@
+.header-radio_music {
+  display: flex;
+  justify-content: space-between;
+}
+.header-radio_music .btn_back {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+}
+.header-radio_music .btn_back.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.header-radio_music .btn_back.active .icon {
+  border-color: white;
+}
+.header-radio_music .btn_back .icon {
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 0.3rem solid transparent;
+}
+.header-radio_music .btn_back .icon svg {
+  width: 70%;
+  height: 70%;
+}
+.header-radio_music .btn_back span {
+  color: white;
+  font-size: 3.8rem;
+  margin-left: 1rem;
+}
+.header-radio_music .date_time p {
+  color: white;
+  font-size: 3.8rem;
+}/*# sourceMappingURL=header.css.map */
